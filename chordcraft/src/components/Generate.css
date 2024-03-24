@@ -1,0 +1,172 @@
+/* background */
+.generate-body{
+  background: linear-gradient(-45deg, #043c4c,#06565b,#146c8b, #c2dde4 );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 68vh;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; 
+  flex-direction: column;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.audio-player {
+  width: 400px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  border-radius: 25px;
+  padding: 10px;
+  max-width: 430;
+}
+
+
+/* title */
+.title h2 {
+  display: flex;
+  justify-content: center;
+  padding: 56px;
+  color: #fff;
+  font-size: 100px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.generate-container {
+  width: auto;
+  height: auto;
+  
+  align-items: flex-start;
+  font-size: 1.4em;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; 
+  flex-direction: column;
+}
+.generate {
+  width: 550px;
+  height: 300px;
+}
+
+.generate input{
+  border-radius: 25px;
+  width: 550px;
+  height: 60px;
+  padding: 26px;
+  margin: 5px;
+}
+
+/* generate button */
+.generate  button{
+  border-radius:25px;
+  width: 550px;
+  height: 60px;
+  font-family: sans-serif;
+  margin: 5px;
+}
+.generate  button:hover{
+  background-color: #66a4ac;
+  color: #fff;
+  border-color: #66a4ac;
+  transition: all 0.5s ease;
+  font-size: 25px;
+  box-shadow:  7px 5px 4px #000;
+}
+footer .section-p1{
+  margin: 0;
+}
+
+/* for ipad/tabs */
+
+
+@media screen and (max-width: 990px) {
+.generate-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 1.4em;
+  font-family: sans-serif;
+}
+.generate input{
+width: 400px;
+height: 50px;
+}
+.generate  button{
+width: 400px;
+height: 50px;
+background-color: #66a4ac;
+color: #fff;
+border-color: #66a4ac;
+transition: all 0.5s ease;
+font-size: 20px;
+box-shadow:  7px 5px 4px #000;
+}
+.generate  button:hover{
+background-color: #66a4ac;
+  color: #fff;
+  border-color: #66a4ac;
+  transition: none;
+  font-size: 20px;
+  box-shadow:  0;
+}
+
+.title h2{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 60px;
+position: relative;
+top: 35px;
+right: 65px;
+font-size: 70px;
+font-weight: 0;
+}
+}
+
+/*  for mobile phones*/
+
+@media screen and (max-width: 780px) {
+.generate-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.generate input{
+width: 350px;
+height: 0px;
+}
+.generate  button{
+width: 350px;
+height: 50px;
+
+}
+
+.title h2{
+padding: 65px;
+position: relative;
+top: 20px;
+right: 15px;
+}
+.generate {
+width: 400px;
+height: 300px;
+
+}
+}

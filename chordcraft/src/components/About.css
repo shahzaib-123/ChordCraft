@@ -1,0 +1,43 @@
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  margin-bottom: 50px;
+  margin-top: -170px;
+}
+
+.about-content {
+  width: 100%;
+  /* max-width: 1200px; */
+  padding: 50px;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 19px;
+}
+
+.back-about-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #c2dde4;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding-top: 50%;
+}
+
+.front-about-card h3 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-content {
+    padding: 20px; 
+  }
+}

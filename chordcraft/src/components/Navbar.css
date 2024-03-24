@@ -1,0 +1,128 @@
+.navbar {
+   background-color: #003a44;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 40px;
+   min-height: 70px;
+
+}
+
+.logo {
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   font-family: sans-serif;
+   color: #fff;
+   position: relative;
+   right: 30%;
+   font-weight: bold;
+}
+
+.navbar img {
+   width: 20%;
+   aspect-ratio: 4/1;
+   object-fit: contain;
+   rotate: -45deg;
+}
+
+.navMenu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 50px;
+   list-style-type: none;
+   text-decoration: none;
+   color: #fff;
+   padding-right: 150px;
+}
+
+.navMenu a:hover {
+   color: #c2dde4;
+   transition: all 0.3s ease;
+}
+
+
+.navMenu a {
+   font-size: 19px;
+   text-decoration: none;
+   color: #fff;
+   list-style-type: none;
+}
+
+.navMenu.active {
+   position: sticky;
+   flex-direction: column;
+   gap: 0;
+   top: 70px;
+   left: -100%;
+   text-align: start;
+   width: 100%;
+   z-index: 1;
+   height: 100px;
+   transition: 0.7s ease-in-out;
+   background-color: #003a44;
+   padding: 10px;
+}
+
+.navMenu.active {
+   left: 0;
+}
+
+.navMenu li {
+   margin: 16px 0;
+}
+
+.hamburger {
+   display: none;
+   cursor: pointer;
+}
+
+.bar {
+   background-color: #fff;
+   width: 20px;
+   height: 3px;
+   display: block;
+   margin: 5px;
+   transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 780px) {
+   .hamburger {
+      display: block;
+   }
+
+   .navMenu {
+      position: absolute;
+      flex-direction: column;
+      gap: 0;
+      top: 70px;
+      left: -100%;
+      text-align: start;
+      width: 100%;
+      background-color: #003a44;
+      padding: 10px;
+   }
+
+   .navMenu.active {
+      left: 0;
+   }
+
+   .navMenu li {
+      margin: 16px 0;
+   }
+   .navbar img {
+      width: 25%;
+      aspect-ratio: 4/2;
+   }
+   .logo {
+      font-size: 27px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-family: sans-serif;
+      color: #fff;
+      position: relative;
+      right: 20%;
+   }
+}
